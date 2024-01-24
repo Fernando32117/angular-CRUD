@@ -5,9 +5,13 @@
 
 .sidenav a {
     color: #fff;
-    padding-right: 10px;
 }
 
 .sidenav i {
-    padding: 10px;
+    padding-right: 10px;
+}
+
+.content{
+    padding: 1rem;
+    background-color: #bab8b5;
 }
