@@ -22,7 +22,13 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@app/*": ["app/*"]
+    },
+    "typeRoots": ["./node_modules/@types", "./custom-typings"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

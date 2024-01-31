@@ -15,10 +15,10 @@ export class ProductUpdateComponent implements OnInit {
     private productService: ProductService,
     private router: Router,
     private route: ActivatedRoute
-  ) {}
+  ) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get("id")?? '';
+    const id = this.route.snapshot.paramMap.get("id") || ''; // Use o operador de coalescência( ?? ou || ) nula para garantir que id seja uma string
     this.productService.readById(id).subscribe((product) => {
       this.product = product;
     });
